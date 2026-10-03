@@ -1,0 +1,31 @@
+# The previous attempt: an Electron desktop app and an Expo mobile app, together about 4.6 GB,
+# mostly node_modules and build output. SyncDrop no longer ships either — a browser is the
+# client — so they stay on disk and out of the repository. Delete them when you are ready.
+desktop/
+mobile/
+
+# Python
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+
+# Testing and tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Files people actually transfer, in case somebody runs it from the checkout
+received/
+SyncDrop/
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store

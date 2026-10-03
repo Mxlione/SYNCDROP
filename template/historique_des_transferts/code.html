@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-container": "#dad7ff", "on-primary-fixed-variant": "#3323cc", "background": "#0f131d", "error-container": "#93000a", "on-tertiary-fixed-variant": "#005236", "on-secondary-fixed-variant": "#004e5c", "surface-variant": "#313540", "surface-bright": "#353944", "secondary-fixed-dim": "#4cd7f6", "on-error-container": "#ffdad6", "on-background": "#dfe2f1", "on-primary-fixed": "#0f0069", "tertiary-fixed": "#6ffbbe", "inverse-surface": "#dfe2f1", "surface-container-low": "#171b26", "secondary": "#4cd7f6", "surface-dim": "#0f131d", "surface-container-lowest": "#0a0e18", "primary": "#c3c0ff", "error": "#ffb4ab", "on-error": "#690005", "on-secondary-fixed": "#001f26", "tertiary-container": "#006e4b", "tertiary": "#4edea3", "on-secondary": "#003640", "on-surface-variant": "#c7c4d8", "tertiary-fixed-dim": "#4edea3", "outline-variant": "#464555", "secondary-container": "#03b5d3", "primary-container": "#4f46e5", "on-tertiary-fixed": "#002113", "on-secondary-container": "#00424e", "surface-container": "#1c1f2a", "on-surface": "#dfe2f1", "surface-container-highest": "#313540", "surface-container-high": "#262a35", "surface": "#0f131d", "on-tertiary-container": "#67f4b7", "outline": "#918fa1", "inverse-on-surface": "#2c303b", "surface-tint": "#c3c0ff", "secondary-fixed": "#acedff", "on-tertiary": "#003824", "primary-fixed": "#e2dfff", "inverse-primary": "#4d44e3", "on-primary": "#1d00a5", "primary-fixed-dim": "#c3c0ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1rem", "space-lg": "1.5rem", "margin": "1.25rem", "space-md": "1rem", "space-xs": "0.25rem", "space-xl": "2.25rem", "space-sm": "0.5rem" }, fontFamily: { "headline-xl": ["Geist"], "label-sm": ["Geist"], "headline-lg": ["Geist"], "label-lg": ["Geist"], "body-lg": ["Geist"], "body-sm": ["Geist"], "label-md": ["Geist"], "body-md": ["Geist"], "headline-xl-mobile": ["Geist"], "headline-sm": ["Geist"] }, fontSize: { "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "12px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-primary/20"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.25)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Logo SyncDrop" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Xyv0Vjsinh6ePDOFtPaAk1b6jy8-sS0h0RhUnIX6z4Qk8Z-P6DJxH7ZXnXdc8qI69dGFuvIq6dCW0j6Fp_dK_HTeAuqEPd9ZF3BOiJ_kp2lVJxJlQv73_Jl8ayISEAz2G9QMKRt2GePowRGn1p9B_bOKIWjiuvqA1ErKBl8UT5RR1yuS6vOwc3D4mP8T4cjF-kvdtXPiG62l3rW_g6DNY8hB3HAQLruYAfzhS0QAWkRB6DpUWdnvT3HNd3"/><div class="flex flex-col"><span class="font-label-md text-label-md text-secondary tracking-wider uppercase">SyncDrop</span><span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Appareils A Proximite</span></div></div><div class="flex items-center gap-space-sm"><a class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface bg-surface-container-low/60 hover:bg-surface-container-high transition-colors" data-path="parametres" href="#"><span class="material-symbols-outlined text-[22px]">settings</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive & Filter Controller Logic -->
+<script>
+    function switchFilter(el, filterType) {
+      document.querySelectorAll('.filter-pill').forEach(btn => {
+        btn.classList.remove('bg-gradient-to-r', 'from-primary-container', 'to-secondary-container', 'text-on-primary', 'shadow-md', 'shadow-primary-container/20');
+        btn.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      el.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      el.classList.add('bg-gradient-to-r', 'from-primary-container', 'to-secondary-container', 'text-on-primary', 'shadow-md', 'shadow-primary-container/20');
+
+      const items = document.querySelectorAll('.transfer-item');
+      items.forEach(item => {
+        const type = item.getAttribute('data-type');
+        if (filterType === 'all' || type === filterType) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    function toggleQuickMenu(id) {
+      const menu = document.getElementById(id);
+      if (menu) {
+        menu.classList.toggle('hidden');
+      }
+    }
+  </script>
+<!-- Top Hero & Stats Banner -->
+<section class="px-margin pt-space-md pb-space-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight">Historique</h1>
+<span class="inline-flex items-center justify-center px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-sm text-label-sm">P2P</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">48 transferts locaux • 18.4 Go échangés</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-surface-container transition-all" title="Sélectionner &amp; vider">
+<span class="material-symbols-outlined text-[20px]">auto_delete</span>
+</button>
+<button class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-surface-container transition-all" title="Options d'archivage">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Live Search Bar -->
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-11 pl-10 pr-10 bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md rounded-xl focus:outline-none focus:bg-surface-container focus:text-on-surface transition-all" placeholder="Rechercher un fichier, un appareil..." type="text"/>
+<button class="absolute inset-y-0 right-0 pr-3 flex items-center text-outline hover:text-on-surface transition-colors" title="Filtres avancés">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+</button>
+</div>
+<!-- Quick Pill Filters Horizontal Carousel -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1">
+<button class="filter-pill flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-primary-container to-secondary-container text-on-primary font-label-md text-label-md shadow-md shadow-primary-container/20 transition-all shrink-0" onclick="switchFilter(this, 'all')">
+<span>Tous</span>
+<span class="opacity-90 font-label-sm text-label-sm">48</span>
+</button>
+<button class="filter-pill flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all shrink-0" onclick="switchFilter(this, 'sent')">
+<span class="material-symbols-outlined text-[14px] text-primary">arrow_outward</span>
+<span>Envoyés</span>
+<span class="opacity-75 font-label-sm text-label-sm">31</span>
+</button>
+<button class="filter-pill flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all shrink-0" onclick="switchFilter(this, 'received')">
+<span class="material-symbols-outlined text-[14px] text-tertiary">south_west</span>
+<span>Reçus</span>
+<span class="opacity-75 font-label-sm text-label-sm">17</span>
+</button>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all shrink-0">
+<span class="material-symbols-outlined text-[14px]">movie</span>
+<span>Médias</span>
+</button>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all shrink-0">
+<span class="material-symbols-outlined text-[14px]">description</span>
+<span>Documents</span>
+</button>
+</div>
+</section>
+<!-- P2P Timeline Content -->
+<div class="px-margin flex flex-col gap-space-lg mt-space-xs mb-space-lg">
+<!-- Section A : Aujourd'hui -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<h2 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider">Aujourd'hui</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-md">5 transferts • 4.1 Go</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Item 1 : Shot_Cinematique_Iceland_4K.mov -->
+<div class="transfer-item relative flex items-center justify-between p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all group" data-type="received">
+<div class="flex items-center gap-3 min-w-0 flex-1">
+<div class="relative w-12 h-12 rounded-xl overflow-hidden bg-surface-container-high shrink-0 flex items-center justify-center">
+<img class="w-full h-full object-cover opacity-80" data-alt="A striking cinematic aerial shot of black sand beaches in Iceland with icy blue glacial waters and emerald moss cliffs under dramatic arctic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj2oJeHLQCYsvbidO9WLSqEBOmlxyplo_czs2AYynfsBZjHpSQdZOwB5tYjnGHZsRCVA3I4XK7YMfL8jzYb0XnJyWtdhaMsTgAJuS7c1szIO0EXBUI8wfo4YfyQ5XPJUmMTQ4WkPe5p-A5AYiyhQOyOXygvsLjJJPNz9ivRb0iKcOyDP74wOsgYFrEjytdQIuYCiCbVjYKDjGV9s04UnlRsmqxet8GfRkWMDJDh2tYFoCzNdwZZKTN_A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="absolute bottom-0.5 right-1 font-label-sm text-[8px] leading-tight text-secondary font-bold">4K</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Shot_Cinematique_Iceland_4K.mov</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5 text-on-surface-variant font-body-sm text-body-sm truncate">
+<span class="material-symbols-outlined text-[14px] text-tertiary shrink-0">south_west</span>
+<span class="truncate">PC Bureau - Windows 11</span>
+<span class="text-outline">•</span>
+<span class="shrink-0 text-on-surface font-medium">1.24 Go</span>
+<span class="text-outline">•</span>
+<span class="shrink-0">14:32</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-tertiary/15 text-tertiary font-label-sm text-label-sm">Reçu</span>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="toggleQuickMenu('menu-1')">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Popover Contextual Menu -->
+<div class="hidden absolute right-3 top-12 z-20 w-44 py-1 rounded-xl bg-surface-container-high shadow-xl text-on-surface flex flex-col" id="menu-1">
+<button class="flex items-center gap-2.5 px-3 py-2 text-left hover:bg-surface-container-highest font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">play_arrow</span>
+<span>Lire le média</span>
+</button>
+<button class="flex items-center gap-2.5 px-3 py-2 text-left hover:bg-surface-container-highest font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">send</span>
+<span>Partager à nouveau</span>
+</button>
+<button class="flex items-center gap-2.5 px-3 py-2 text-left hover:bg-surface-container-highest text-error font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+<span>Supprimer le fichier</span>
+</button>
+</div>
+</div>
+<!-- Item 2 : Photos_Vacances_RAW.zip -->
+<div class="transfer-item relative flex items-center justify-between p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all" data-type="sent">
+<div class="flex items-center gap-3 min-w-0 flex-1">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">folder_zip</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Photos_Vacances_RAW.zip</span>
+<span class="shrink-0 px-1.5 py-0.2 rounded-full bg-primary/10 text-primary font-label-sm text-[10px]">100%</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5 text-on-surface-variant font-body-sm text-body-sm truncate">
+<span class="material-symbols-outlined text-[14px] text-primary shrink-0">arrow_outward</span>
+<span class="truncate">MacBook Pro de Sarah</span>
+<span class="text-outline">•</span>
+<span class="shrink-0 text-on-surface font-medium">850 Mo</span>
+<span class="text-outline">•</span>
+<span class="shrink-0">11:15</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+<!-- Item 3 : Maquettes_UI_UX_v3.fig -->
+<div class="transfer-item relative flex items-center justify-between p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all" data-type="sent">
+<div class="flex items-center gap-3 min-w-0 flex-1">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">draw</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Maquettes_UI_UX_v3.fig</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary shrink-0" title="SHA-256 Validé">verified</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5 text-on-surface-variant font-body-sm text-body-sm truncate">
+<span class="material-symbols-outlined text-[14px] text-primary shrink-0">arrow_outward</span>
+<span class="truncate">PC Bureau - Windows 11</span>
+<span class="text-outline">•</span>
+<span class="shrink-0 text-on-surface font-medium">88 Mo</span>
+<span class="text-outline">•</span>
+<span class="shrink-0">09:40</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section B : Hier -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<h2 class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-wider">Hier</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-md">4 transferts • 920 Mo</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Item 4 : Rapport_Tournage_Final.pdf -->
+<div class="transfer-item relative flex items-center justify-between p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all" data-type="received">
+<div class="flex items-center gap-3 min-w-0 flex-1">
+<div class="w-12 h-12 rounded-xl bg-error-container/20 flex items-center justify-center text-error shrink-0">
+<span class="material-symbols-outlined text-[24px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Rapport_Tournage_Final.pdf</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5 text-on-surface-variant font-body-sm text-body-sm truncate">
+<span class="material-symbols-outlined text-[14px] text-tertiary shrink-0">south_west</span>
+<span class="truncate">iPad Pro</span>
+<span class="text-outline">•</span>
+<span class="shrink-0 text-on-surface font-medium">14.2 Mo</span>
+<span class="text-outline">•</span>
+<span class="shrink-0">18:22</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Item 5 : LUTs_Colorimétrie_Pack.zip -->
+<div class="transfer-item relative flex items-center justify-between p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all" data-type="received">
+<div class="flex items-center gap-3 min-w-0 flex-1">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">palette</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface truncate">LUTs_Colorimétrie_Pack.zip</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5 text-on-surface-variant font-body-sm text-body-sm truncate">
+<span class="material-symbols-outlined text-[14px] text-tertiary shrink-0">south_west</span>
+<span class="truncate">PC Bureau - Windows 11</span>
+<span class="text-outline">•</span>
+<span class="shrink-0 text-on-surface font-medium">85.0 Mo</span>
+<span class="text-outline">•</span>
+<span class="shrink-0">16:05</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Item 6 : Audio_Master_Podcast_ep12.wav -->
+<div class="transfer-item relative flex items-center justify-between p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all" data-type="sent">
+<div class="flex items-center gap-3 min-w-0 flex-1">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[24px]">graphic_eq</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Audio_Master_Podcast_ep12.wav</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5 text-on-surface-variant font-body-sm text-body-sm truncate">
+<span class="material-symbols-outlined text-[14px] text-primary shrink-0">arrow_outward</span>
+<span class="truncate">Studio-MacMini</span>
+<span class="text-outline">•</span>
+<span class="shrink-0 text-on-surface font-medium">820 Mo</span>
+<span class="text-outline">•</span>
+<span class="shrink-0">10:14</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section C : Plus ancien -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<h2 class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-wider">Cette semaine</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-md">2 transferts</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Item 7 : Client_Presentation_Pitch.key -->
+<div class="transfer-item relative flex items-center justify-between p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all" data-type="sent">
+<div class="flex items-center gap-3 min-w-0 flex-1">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">slideshow</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Client_Presentation_Pitch.key</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5 text-on-surface-variant font-body-sm text-body-sm truncate">
+<span class="material-symbols-outlined text-[14px] text-primary shrink-0">arrow_outward</span>
+<span class="truncate">Surface Pro 9</span>
+<span class="text-outline">•</span>
+<span class="shrink-0 text-on-surface font-medium">145 Mo</span>
+<span class="text-outline">•</span>
+<span class="shrink-0">14 Mai</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Item 8 : IMG_20250512_RAW_Pack.tar -->
+<div class="transfer-item relative flex items-center justify-between p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all" data-type="received">
+<div class="flex items-center gap-3 min-w-0 flex-1">
+<div class="relative w-12 h-12 rounded-xl overflow-hidden bg-surface-container-high shrink-0 flex items-center justify-center">
+<img class="w-full h-full object-cover opacity-80" data-alt="Futuristic studio photography of high-tech hardware with sharp neon indigo and cyan highlights, glowing circuits and clean metallic textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlyJWf77iM9GmAfnb1OtmyChdHVWGYBNWgbPSfj6toI-9kbQdJ7FFCIPKKJbNQZnndau-f_-CJS2I3sEOuPKbAP4FUbqqlqxdzAnoKIxKLX0-Q3Amnb7J5gefvFIdB60FFSyNcNXm1l_8TdmuGiJpeSt6RbnRE2xNC5uw37z5vbVRB5k2337K7wwXrOotkUwvy1l2VtEJbzt_HNmpDCv6MdA8pFeiweaw6jMRFHaiWO5v6clppd7sRgw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="absolute bottom-0.5 right-1 font-label-sm text-[8px] leading-tight text-primary font-bold">TAR</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface truncate">IMG_20250512_RAW_Pack.tar</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5 text-on-surface-variant font-body-sm text-body-sm truncate">
+<span class="material-symbols-outlined text-[14px] text-tertiary shrink-0">south_west</span>
+<span class="truncate">Galaxy S24 Ultra</span>
+<span class="text-outline">•</span>
+<span class="shrink-0 text-on-surface font-medium">2.1 Go</span>
+<span class="text-outline">•</span>
+<span class="shrink-0">12 Mai</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Local Storage Footprint Pill / P2P Badge -->
+<footer class="px-margin mb-space-md">
+<div class="p-3.5 rounded-2xl bg-surface-container flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">hard_drive</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Espace SyncDrop utilisé : 18.4 Go</span>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>Protocole 100% direct sans cloud</span>
+</div>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-colors">
+        Gérer
+      </button>
+</div>
+</footer>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_-2px_16px_rgba(0,0,0,0.35)]" data-active-classes="text-secondary"><div class="flex justify-around items-center h-16 px-margin max-w-lg mx-auto"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-11 transition-colors text-secondary" data-path="appareils-a-proximite" href="#"><span class="material-symbols-outlined text-[24px]">radar</span><span class="font-label-sm text-label-sm">Appareils</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-11 text-on-surface-variant hover:text-on-surface transition-colors" data-path="transferts-en-cours" href="#"><span class="material-symbols-outlined text-[24px]">sync_alt</span><span class="font-label-sm text-label-sm">Transferts</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-11 text-on-surface-variant hover:text-on-surface transition-colors" data-path="parametres" href="#"><span class="material-symbols-outlined text-[24px]">tune</span><span class="font-label-sm text-label-sm">Paramètres</span></a></div></nav></body></html>

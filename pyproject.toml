@@ -1,0 +1,87 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "syncdrop"
+dynamic = ["version"]
+description = "Move files between devices on one network, with nothing installed on the far end"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+authors = [{ name = "Mxlione" }]
+keywords = ["file-transfer", "lan", "local-network", "wifi", "xender", "airdrop", "no-cloud"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Web Environment",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Communications :: File Sharing",
+]
+
+# No runtime dependencies, on purpose. SyncDrop has to run on a machine somebody has just sat
+# down at, which may have no network to install from — the whole point is that it works without
+# the internet. Everything it needs is in the standard library, including the QR encoder.
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.1",
+    "pytest-cov>=5.0",
+    "ruff>=0.4",
+    "mypy>=1.9",
+    # Only to check SyncDrop's own QR encoder against an independent one, module for module.
+    # Never imported at runtime; the test skips itself when it is absent.
+    #
+    # python-qrcode rather than segno, and the reason is worth recording: segno emits an extra
+    # zero codeword before the padding whenever the bit stream is already byte aligned after the
+    # terminator. Both symbols scan, because a decoder stops at the character count, but only
+    # one matches the standard's "if the resulting bit string is not a multiple of 8". The
+    # worked example in ISO/IEC 18004 agrees with python-qrcode.
+    "qrcode>=7.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/Mxlione/SYNCDROP"
+Repository = "https://github.com/Mxlione/SYNCDROP"
+Issues = "https://github.com/Mxlione/SYNCDROP/issues"
+
+[project.scripts]
+syncdrop = "syncdrop.cli:main"
+
+[tool.hatch.version]
+path = "src/syncdrop/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/syncdrop"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "N", "UP", "B", "BLE", "C4", "SIM", "RUF", "S"]
+ignore = ["N803", "N806"]
+
+[tool.ruff.lint.per-file-ignores]
+# Tests assert, bind to loopback and use predictable values on purpose.
+"tests/**" = ["S101", "S104", "S105", "S106", "S311"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+packages = ["syncdrop"]
+mypy_path = "src"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests", "src"]
+addopts = "--doctest-modules --strict-markers"
+markers = [
+    "network: touches real sockets on this machine",
+    "slow: takes more than a second",
+]

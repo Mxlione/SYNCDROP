@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-container": "#dad7ff", "on-primary-fixed-variant": "#3323cc", "background": "#0f131d", "error-container": "#93000a", "on-tertiary-fixed-variant": "#005236", "on-secondary-fixed-variant": "#004e5c", "surface-variant": "#313540", "surface-bright": "#353944", "secondary-fixed-dim": "#4cd7f6", "on-error-container": "#ffdad6", "on-background": "#dfe2f1", "on-primary-fixed": "#0f0069", "tertiary-fixed": "#6ffbbe", "inverse-surface": "#dfe2f1", "surface-container-low": "#171b26", "secondary": "#4cd7f6", "surface-dim": "#0f131d", "surface-container-lowest": "#0a0e18", "primary": "#c3c0ff", "error": "#ffb4ab", "on-error": "#690005", "on-secondary-fixed": "#001f26", "tertiary-container": "#006e4b", "tertiary": "#4edea3", "on-secondary": "#003640", "on-surface-variant": "#c7c4d8", "tertiary-fixed-dim": "#4edea3", "outline-variant": "#464555", "secondary-container": "#03b5d3", "primary-container": "#4f46e5", "on-tertiary-fixed": "#002113", "on-secondary-container": "#00424e", "surface-container": "#1c1f2a", "on-surface": "#dfe2f1", "surface-container-highest": "#313540", "surface-container-high": "#262a35", "surface": "#0f131d", "on-tertiary-container": "#67f4b7", "outline": "#918fa1", "inverse-on-surface": "#2c303b", "surface-tint": "#c3c0ff", "secondary-fixed": "#acedff", "on-tertiary": "#003824", "primary-fixed": "#e2dfff", "inverse-primary": "#4d44e3", "on-primary": "#1d00a5", "primary-fixed-dim": "#c3c0ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1rem", "space-lg": "1.5rem", "margin": "1.25rem", "space-md": "1rem", "space-xs": "0.25rem", "space-xl": "2.25rem", "space-sm": "0.5rem" }, fontFamily: { "headline-xl": ["Geist"], "label-sm": ["Geist"], "headline-lg": ["Geist"], "label-lg": ["Geist"], "body-lg": ["Geist"], "body-sm": ["Geist"], "label-md": ["Geist"], "body-md": ["Geist"], "headline-xl-mobile": ["Geist"], "headline-sm": ["Geist"] }, fontSize: { "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "12px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-primary/20"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.25)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Logo SyncDrop" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Xyv0Vjsinh6ePDOFtPaAk1b6jy8-sS0h0RhUnIX6z4Qk8Z-P6DJxH7ZXnXdc8qI69dGFuvIq6dCW0j6Fp_dK_HTeAuqEPd9ZF3BOiJ_kp2lVJxJlQv73_Jl8ayISEAz2G9QMKRt2GePowRGn1p9B_bOKIWjiuvqA1ErKBl8UT5RR1yuS6vOwc3D4mP8T4cjF-kvdtXPiG62l3rW_g6DNY8hB3HAQLruYAfzhS0QAWkRB6DpUWdnvT3HNd3"/><div class="flex flex-col"><span class="font-label-md text-label-md text-secondary tracking-wider uppercase">SyncDrop</span><span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Appareils A Proximite</span></div></div><div class="flex items-center gap-space-sm"><a class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface bg-surface-container-low/60 hover:bg-surface-container-high transition-colors" data-path="parametres" href="#"><span class="material-symbols-outlined text-[22px]">settings</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full relative">
+<!-- Action Header Context (Back, Device Destination, Mass Select) -->
+<div class="px-margin pt-space-sm pb-space-md flex flex-col gap-space-sm bg-surface-container-lowest/60 backdrop-blur-md">
+<div class="flex items-center justify-between">
+<button aria-label="Annuler la sélection" class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2 rounded-lg hover:bg-surface-container active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span class="font-label-lg text-label-lg">Annuler</span>
+</button>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Rechercher des fichiers" class="w-9 h-9 rounded-xl flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+<button class="px-3 py-1.5 rounded-xl bg-surface-container-high text-primary font-label-md text-label-md hover:bg-surface-variant active:scale-95 transition-all flex items-center gap-1" id="btn-select-all" type="button">
+<span class="material-symbols-outlined text-[16px]">select_all</span>
+<span>Tout cocher</span>
+</button>
+</div>
+</div>
+<!-- Recipient Device Banner -->
+<div class="flex items-center justify-between px-space-md py-space-sm rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">desktop_windows</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">PC Bureau - Windows 11</span>
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse shrink-0"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Wi-Fi 5 GHz • P2P Direct crypté</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm bg-secondary/10 px-2 py-0.5 rounded-full shrink-0">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>180 Mo/s</span>
+</div>
+</div>
+</div>
+<!-- Category Filter Pills (Horizontal Scroll) -->
+<div class="w-full overflow-x-auto no-scrollbar py-space-sm px-margin flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md whitespace-nowrap active:scale-95 transition-transform hover:text-on-surface" type="button">
+<span>Tous</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-primary-container to-secondary-container text-on-primary font-label-md text-label-md shadow-[0_2px_12px_rgba(79,70,229,0.4)] whitespace-nowrap active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">photo_library</span>
+<span>Photos</span>
+<span class="ml-0.5 px-1.5 py-0.2 bg-surface-container-lowest/40 rounded-full font-label-sm text-label-sm">142</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md whitespace-nowrap active:scale-95 transition-transform hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+<span>Vidéos</span>
+<span class="text-on-surface-variant/70 font-label-sm text-label-sm">38</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md whitespace-nowrap active:scale-95 transition-transform hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">description</span>
+<span>Documents</span>
+<span class="text-on-surface-variant/70 font-label-sm text-label-sm">19</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md whitespace-nowrap active:scale-95 transition-transform hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">audio_file</span>
+<span>Audio</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md whitespace-nowrap active:scale-95 transition-transform hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">android</span>
+<span>APKs</span>
+</button>
+</div>
+<!-- Quick Storage Directory Shortcuts -->
+<div class="px-margin py-space-xs grid grid-cols-3 gap-2">
+<button class="flex items-center gap-2 p-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-colors group" type="button">
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-primary text-[18px]">image</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Galerie</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant truncate">DCIM / Caméra</span>
+</div>
+</button>
+<button class="flex items-center gap-2 p-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-colors group" type="button">
+<div class="w-8 h-8 rounded-lg bg-secondary/15 flex items-center justify-center group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-secondary text-[18px]">folder_open</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Fichiers</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant truncate">Stockage int.</span>
+</div>
+</button>
+<button class="flex items-center gap-2 p-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-colors group" type="button">
+<div class="w-8 h-8 rounded-lg bg-tertiary/15 flex items-center justify-center group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-tertiary text-[18px]">download</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Downloads</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant truncate">3 nouv.</span>
+</div>
+</button>
+</div>
+<!-- Media Gallery Grid Section (Aujourd'hui / Récent) -->
+<div class="px-margin mt-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Photos &amp; Vidéos récentes</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">Aujourd'hui</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">6 médias</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<!-- Media 1: Checked Image -->
+<div class="file-item relative aspect-square rounded-xl overflow-hidden bg-surface-container shadow-sm cursor-pointer group select-none" data-bytes="14200000" data-checked="true">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Vibrant tropical landscape photography with clear turquoise ocean water, palm trees, sunlit golden hour atmosphere, captured on mirrorless camera in RAW format." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2Jknr-eB_xvhcDWFirwWPuj2jJdWb5rSCETaDFE7GvzuvuHZrIseVSfMpPQG3DGgJYOoYXaJq0zYElRUmFwXskoMkuwKrfukU_laHj_ryOQuutGfDlPVNH3qhdVcxBejkQuk2SLReqYhruu0pm6esqCavytfRLwHFav-S8TEvjOBTMcqXJ2kYXNtGM0Lx3IyoXQbC7EM7XwWeu9lChppJsF0pG-yPpIS5zqZNYWe89w7DG98g91g1Bw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30 pointer-events-none"></div>
+<div class="checkbox-indicator absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-md transition-all scale-100">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+<div class="absolute bottom-1.5 left-1.5 flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded bg-black/60 backdrop-blur-sm text-white font-label-sm text-[9px] tracking-wide">RAW</span>
+<span class="text-white/80 font-label-sm text-[10px]">14 Mo</span>
+</div>
+</div>
+<!-- Media 2: Checked Video -->
+<div class="file-item relative aspect-square rounded-xl overflow-hidden bg-surface-container shadow-sm cursor-pointer group select-none" data-bytes="242000000" data-checked="true">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Cinematic drone aerial shot over modern cityscape architecture at twilight with neon cyan and purple glowing street trails, 4K HDR quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbRskB8m5j-U6t0Nn7BJjQIYI1mWADwBhXGTSYgq7SkromU8hQUNl102CQf2jXaj1n61X2jwTAD6ck3Ln8RSqIqRRwZEzqevG9fOSBJgs0a-TJ8ZMtJW_E8B_sgyGBGvvzuT1qO1XDBtfz0UhvG_zqbxWkhYVKLGt10d7C7U8vplPPB2HYzEld-CL2UHZKW-lcTmXsWxms-S0j7rvG0NF0NalkwoOwX3Xt1q4dq0cAUaGQcasjUex7Og"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30 pointer-events-none"></div>
+<div class="checkbox-indicator absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-md transition-all scale-100">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+<div class="absolute bottom-1.5 left-1.5 flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded bg-black/60 backdrop-blur-sm text-secondary font-label-sm text-[9px] tracking-wide flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[10px]">play_arrow</span>4K
+          </span>
+<span class="text-white font-label-sm text-[10px]">02:14</span>
+</div>
+</div>
+<!-- Media 3: Unchecked Photo -->
+<div class="file-item relative aspect-square rounded-xl overflow-hidden bg-surface-container shadow-sm cursor-pointer group select-none" data-bytes="8400000" data-checked="false">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Minimalist design workspace with ultra-wide curved monitor displaying code editor, mechanical keyboard, plant, moody slate ambient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeDEFurQKcS6lLcei3oJ9YEuJwJYPrNtEx4bu9eehEAg9OcgHAg5bgC7liLz4elonr_jy68vGV9BR9tMtBe7wuLEYPbr2O2lfvDTTRYvs-fHpAoVW5ck9b6xTajoz7alPwpuG4xWd6LZBwZcUDi_81ZkMNaiMC2xmQUqSIiSnx8QYnVu6XNlAjnl39MtSWI513633frr6GbrPji1rzCPgEyvcStCk4SxnqStN3Am5hD03kU2cGzIa47A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none"></div>
+<div class="checkbox-indicator absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-surface-container-lowest/60 backdrop-blur-md border-0 text-transparent flex items-center justify-center shadow-sm transition-all">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="absolute bottom-1.5 left-1.5 flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded bg-black/60 backdrop-blur-sm text-white/90 font-label-sm text-[9px]">JPG</span>
+<span class="text-white/80 font-label-sm text-[10px]">8.4 Mo</span>
+</div>
+</div>
+<!-- Media 4: Unchecked Screenshot -->
+<div class="file-item relative aspect-square rounded-xl overflow-hidden bg-surface-container shadow-sm cursor-pointer group select-none" data-bytes="3100000" data-checked="false">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Detailed mobile user interface analytics dashboard graphic showing dark mode charts with cyan line graphs and modular cards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfSVg3A-CQfZWK_SSeeHFUQGb6Sb02Fuzsvp1LejPceM6UXhELRKNxXFGjoGben2y9N7SrpjQKDW-zC0y7xZIzmNTPN3Skfeqd0sGLH1bkcbcqRAHrS7U1Z1W-hivGq1IGnwIaA4amOgQYTrj0m7HJ_YAPIDbobkZSL_JoflQcXNDf6yBTJZh07n-DV6zFgYikB_r1iEjfw5gXxuMTplAdK0owAkwS3PJ-0jmzx4ri7Xoj1nfWaBh1xQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none"></div>
+<div class="checkbox-indicator absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-surface-container-lowest/60 backdrop-blur-md text-transparent flex items-center justify-center shadow-sm transition-all">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="absolute bottom-1.5 left-1.5 flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded bg-black/60 backdrop-blur-sm text-white/90 font-label-sm text-[9px]">PNG</span>
+<span class="text-white/80 font-label-sm text-[10px]">3.1 Mo</span>
+</div>
+</div>
+<!-- Media 5: Unchecked Video -->
+<div class="file-item relative aspect-square rounded-xl overflow-hidden bg-surface-container shadow-sm cursor-pointer group select-none" data-bytes="78000000" data-checked="false">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High-speed slow motion water splash sculpture illuminated with blue and purple LED studio lights, sleek dark backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxZEwX-fhaB2uTQnxrJNtmSAgB9DP9Z8iMjyjySBb3-yyFoNUaBopSKQOF2v0S8qfZuCJkoZEy7EmtR1Qx52iNUHCGt_fc7jmVm66NQXLx2YuLEbu_AOZ6TSNwFG0LXVYz0Xc1QEh7JG9eDPkxftWKeeqwtFUWU0w-RbnGdxpaM1wUwjp36BHZJLZqIxpXPCeJEjWow1hRuUwF4PiYm62O8fxq9AW4qGbuyMj-Rs_QsYllMdwfk7tw4Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30 pointer-events-none"></div>
+<div class="checkbox-indicator absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-surface-container-lowest/60 backdrop-blur-md text-transparent flex items-center justify-center shadow-sm transition-all">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="absolute bottom-1.5 left-1.5 flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded bg-black/60 backdrop-blur-sm text-secondary font-label-sm text-[9px] flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[10px]">play_arrow</span>FHD
+          </span>
+<span class="text-white font-label-sm text-[10px]">00:45</span>
+</div>
+</div>
+<!-- Media 6: Unchecked Photo -->
+<div class="file-item relative aspect-square rounded-xl overflow-hidden bg-surface-container shadow-sm cursor-pointer group select-none" data-bytes="19800000" data-checked="false">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Macro portrait of a curious mechanical watch movement with intricate golden gears and metallic reflections in soft light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCroDPNVR9pogCXBvqQzOP0pR7TLWyWqSqQ8SFSWFy6PlXaTUPSsx4foCZnUkoccmoaSHp6VylRPdTAtERPIpFbZ5qVpwo-vVBKDWvd8nuRfbDCtP4R8vGdCfIYsyyF9Rw7Ag0xE2ZPtl-hBTkGOjain-64z6yeQqe6cORt_XfbC8BM8W40dUBFPtEBfu0ov4ZAOxq06xWVmSkzBwxWEzhahM8cFFQ5LkViAjllUC8YJySvs0_gcG2ajg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none"></div>
+<div class="checkbox-indicator absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-surface-container-lowest/60 backdrop-blur-md text-transparent flex items-center justify-center shadow-sm transition-all">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="absolute bottom-1.5 left-1.5 flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded bg-black/60 backdrop-blur-sm text-white/90 font-label-sm text-[9px]">RAW</span>
+<span class="text-white/80 font-label-sm text-[10px]">19.8 Mo</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Documents & Archives Section (List View) -->
+<div class="px-margin mt-space-lg mb-28 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Documents récents</span>
+<span class="font-label-sm text-label-sm text-primary bg-primary/10 px-2 py-0.5 rounded-full">Partage rapide</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">3 fichiers</span>
+</div>
+<div class="flex flex-col gap-2">
+<!-- File 1: Checked PDF -->
+<div class="file-item flex items-center justify-between p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-sm active:scale-[0.99] select-none" data-bytes="14200000" data-checked="true">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-11 h-11 rounded-xl bg-error-container/40 flex items-center justify-center shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-error text-[24px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-medium truncate">Rapport_Financier_2025.pdf</span>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span>14.2 Mo</span>
+<span>•</span>
+<span>Modifié ce matin, 09:41</span>
+</div>
+</div>
+</div>
+<div class="checkbox-indicator w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 ml-3 shadow-sm transition-all">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+</div>
+<!-- File 2: Checked Figma Archive -->
+<div class="file-item flex items-center justify-between p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-sm active:scale-[0.99] select-none" data-bytes="88000000" data-checked="true">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-11 h-11 rounded-xl bg-primary-container/40 flex items-center justify-center shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-primary text-[24px]">design_services</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-medium truncate">Maquettes_UI_UX_v3.fig</span>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span>88.0 Mo</span>
+<span>•</span>
+<span>Hier, 18:22</span>
+</div>
+</div>
+</div>
+<div class="checkbox-indicator w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 ml-3 shadow-sm transition-all">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+</div>
+<!-- File 3: Unchecked Zip Archive -->
+<div class="file-item flex items-center justify-between p-3 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-sm active:scale-[0.99] select-none" data-bytes="340000000" data-checked="false">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-11 h-11 rounded-xl bg-surface-variant flex items-center justify-center shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-tertiary text-[24px]">folder_zip</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-medium truncate">Archive_Projet_Client.zip</span>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span>340.0 Mo</span>
+<span>•</span>
+<span>12 nov., 14:05</span>
+</div>
+</div>
+</div>
+<div class="checkbox-indicator w-6 h-6 rounded-full bg-surface-container-high text-transparent flex items-center justify-center shrink-0 ml-3 shadow-sm transition-all">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Floating Action Dock -->
+<div class="fixed bottom-16 left-0 right-0 z-40 px-margin pb-3 pointer-events-none">
+<div class="max-w-md mx-auto pointer-events-auto bg-surface-container-high/90 backdrop-blur-xl p-3 rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.6)] flex items-center justify-between gap-3">
+<!-- Selection Summary -->
+<div class="flex items-center gap-3 pl-2 min-w-0">
+<button aria-label="Désélectionner tout" class="w-8 h-8 rounded-full bg-surface-variant/80 hover:bg-surface-variant text-on-surface-variant hover:text-on-surface flex items-center justify-center shrink-0 transition-colors" id="btn-clear-selection" title="Effacer la sélection" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-bold truncate" id="selected-count-label">4 sélectionnés</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary truncate" id="selected-size-label">358.4 Mo total</span>
+</div>
+</div>
+<!-- Primary Dispatch CTA Button -->
+<button class="flex items-center gap-2 px-5 py-3.5 rounded-2xl bg-gradient-to-r from-primary-container via-indigo-500 to-secondary-container text-white font-label-lg text-label-lg font-semibold shadow-[0_4px_20px_rgba(6,182,212,0.35)] hover:shadow-[0_6px_28px_rgba(6,182,212,0.5)] active:scale-95 transition-all shrink-0 group" id="btn-send-files" type="button">
+<span>Envoyer</span>
+<span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">send</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function initFileSelection() {
+    const fileItems = document.querySelectorAll('.file-item');
+    const selectedCountLabel = document.getElementById('selected-count-label');
+    const selectedSizeLabel = document.getElementById('selected-size-label');
+    const btnClear = document.getElementById('btn-clear-selection');
+    const btnSelectAll = document.getElementById('btn-select-all');
+    const btnSend = document.getElementById('btn-send-files');
+
+    function formatBytes(bytes) {
+      if (bytes === 0) return '0 Mo';
+      const mb = bytes / (1024 * 1024);
+      return mb.toFixed(1) + ' Mo';
+    }
+
+    function updateSummary() {
+      let count = 0;
+      let totalBytes = 0;
+
+      fileItems.forEach(item => {
+        const isChecked = item.getAttribute('data-checked') === 'true';
+        if (isChecked) {
+          count++;
+          totalBytes += parseInt(item.getAttribute('data-bytes') || '0', 10);
+        }
+      });
+
+      if (selectedCountLabel) {
+        selectedCountLabel.textContent = count === 0 ? 'Aucun fichier' : `${count} sélectionné${count > 1 ? 's' : ''}`;
+      }
+      if (selectedSizeLabel) {
+        selectedSizeLabel.textContent = count === 0 ? 'Touchez pour choisir' : `${formatBytes(totalBytes)} total`;
+      }
+      if (btnSend) {
+        if (count === 0) {
+          btnSend.classList.add('opacity-40', 'pointer-events-none');
+        } else {
+          btnSend.classList.remove('opacity-40', 'pointer-events-none');
+        }
+      }
+    }
+
+    function setItemCheckedState(item, checked) {
+      item.setAttribute('data-checked', checked ? 'true' : 'false');
+      const indicator = item.querySelector('.checkbox-indicator');
+      if (indicator) {
+        if (checked) {
+          indicator.className = 'checkbox-indicator absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-md transition-all scale-100';
+          if (!indicator.classList.contains('absolute')) {
+            indicator.className = 'checkbox-indicator w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 ml-3 shadow-sm transition-all';
+          }
+        } else {
+          indicator.className = 'checkbox-indicator absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-surface-container-lowest/60 backdrop-blur-md text-transparent flex items-center justify-center shadow-sm transition-all';
+          if (!indicator.classList.contains('absolute')) {
+            indicator.className = 'checkbox-indicator w-6 h-6 rounded-full bg-surface-container-high text-transparent flex items-center justify-center shrink-0 ml-3 shadow-sm transition-all';
+          }
+        }
+      }
+    }
+
+    fileItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const currentChecked = item.getAttribute('data-checked') === 'true';
+        setItemCheckedState(item, !currentChecked);
+        updateSummary();
+      });
+    });
+
+    if (btnClear) {
+      btnClear.addEventListener('click', (e) => {
+        e.stopPropagation();
+        fileItems.forEach(item => setItemCheckedState(item, false));
+        updateSummary();
+      });
+    }
+
+    if (btnSelectAll) {
+      btnSelectAll.addEventListener('click', () => {
+        const anyUnchecked = Array.from(fileItems).some(item => item.getAttribute('data-checked') !== 'true');
+        fileItems.forEach(item => setItemCheckedState(item, anyUnchecked));
+        updateSummary();
+      });
+    }
+
+    updateSummary();
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_-2px_16px_rgba(0,0,0,0.35)]" data-active-classes="text-secondary"><div class="flex justify-around items-center h-16 px-margin max-w-lg mx-auto"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-11 transition-colors text-secondary" data-path="appareils-a-proximite" href="#"><span class="material-symbols-outlined text-[24px]">radar</span><span class="font-label-sm text-label-sm">Appareils</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-11 text-on-surface-variant hover:text-on-surface transition-colors" data-path="transferts-en-cours" href="#"><span class="material-symbols-outlined text-[24px]">sync_alt</span><span class="font-label-sm text-label-sm">Transferts</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-11 text-on-surface-variant hover:text-on-surface transition-colors" data-path="parametres" href="#"><span class="material-symbols-outlined text-[24px]">tune</span><span class="font-label-sm text-label-sm">Paramètres</span></a></div></nav></body></html>
